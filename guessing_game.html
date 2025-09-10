@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guessing Game</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  let secret_number = Math.floor(Math.random() * 10) + 1;
+  // console.log(secret_number);
+
+  user_name = prompt("Enter your name").toLowerCase();
+  user_input = parseInt(prompt("Make a guess between 1-10"));
+  if (user_input === secret_number) {
+    console.log(`Congratulations ${user_name}! You just made a right guess.`);
+  } else {
+    // user_name = prompt("Enter your name").toLowerCase();
+    console.log(
+      `Sorry ${user_name}! You just made a wrong guess. The right number is ${secret_number}`
+    );
+  }
+</script>
