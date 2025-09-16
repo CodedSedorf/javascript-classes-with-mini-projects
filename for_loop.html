@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Loop in JAVASCRIPT</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  // let list = ["rice", "bean", "rice", "bean", "rice", "bean"];
+  // for (let index = 0; index < list.length; index++) {
+  //   const element = list[index];
+  //   console.log(element);
+  // }
+
+  let secret_number = Math.floor(Math.random() * 10) + 1;
+  let number_tries = 3;
+  let guess = 0;
+  while (guess < number_tries) {
+    let userName = prompt("Enter your name");
+    let user_guess = parseInt(prompt("Make a guess from 1-10"));
+    guess += 1;
+    if (user_guess === secret_number) {
+      console.log("Congratulations! You just made a right guess");
+      break;
+    } else {
+      console.log("Sorry! Please try again");
+    }
+  }
+</script>
